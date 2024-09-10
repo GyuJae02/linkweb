@@ -259,3 +259,13 @@ function getDate() {
 
 dragSelectorLogic();
 getDate();
+
+function DispositivoNonSupportato() {
+    let AttualeWidthContainer = document.getElementById("width-attuale");
+    let AttualeHeightContainer = document.getElementById("height-attuale");
+
+    let widthSpiegazione = document.getElementById("width-spiegazione");
+    let heightSpiegazione = document.getElementById("height-spiegazione");
+}
+
+DispositivoNonSupportato();
