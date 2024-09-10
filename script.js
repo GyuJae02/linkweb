@@ -259,31 +259,3 @@ function getDate() {
 
 dragSelectorLogic();
 getDate();
-
-function DispositivoNonSupportato() {
-    let AttualeWidthContainer = document.getElementById("width-attuale");
-    let AttualeHeightContainer = document.getElementById("height-attuale");
-
-    let widthSpiegazione = document.getElementById("width-spiegazione");
-    let heightSpiegazione = document.getElementById("height-spiegazione");
-
-    checkSopporto();
-
-    window.addEventListener("resize", function() {
-        checkSopporto();
-    });
-
-    function checkSopporto() {
-        // se la larghezza è inferiore a 800px, allora si mostra la spiegazione
-        if (window.innerWidth < 800) {
-            AttualeWidthContainer.innerHTML = window.innerWidth + "px";
-        }
-
-        // se l'altezza è inferiore a 600px, allora si mostra la spiegazione
-        if (window.innerHeight < 600) {
-            AttualeHeightContainer.innerHTML = window.innerHeight + "px";
-        }
-    }
-}
-
-DispositivoNonSupportato();
