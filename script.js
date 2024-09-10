@@ -82,7 +82,13 @@ for (let i = 0; i < appIcon.length; i++) {
         windowsTab.style.display = "grid";
         let appName = appIcon[i].querySelector("span").textContent;
         nomeTab.textContent = appName;
-        let appImage = appIcon[i].querySelector("img").src;
+
+        var findIframeResult = document.getElementById("iframe");
+        if (appName == "Contact") {
+            findIframeResult.src = "linkweb/index.html";
+        } else if (appName == "Lions"){
+            findIframeResult.src = "https://www.samsunglions.com/m/";
+        }
     });
 }
 
