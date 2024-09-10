@@ -96,6 +96,9 @@ for (let i = 0; i < appIcon.length; i++) {
 
 closeBtn.addEventListener("click", function() {
     windowsTab.style.display = "none";
+
+    var findIframeResult = document.getElementById("iframe");
+    findIframeResult.src = "";
 });
 
 
