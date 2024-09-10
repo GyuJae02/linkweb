@@ -13,7 +13,7 @@ const cover = document.getElementById('cover');
 const songs = ['혼연일체 (渾然一體)', '신나게 삼성', '승리를 위해', '빅토리 라이온즈', '모두 외쳐라 (Feat. 황석빈)', '라인업 송', '라이온즈 박병호'];
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
