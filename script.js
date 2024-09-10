@@ -89,7 +89,7 @@ for (let i = 0; i < appIcon.length; i++) {
         } else if (appName == "Lions"){
             findIframeResult.src = "https://www.samsunglions.com/m/";
         } else if (appName == "Lions PlayList") {
-            result.src = "music-player/index.html";
+            findIframeResult.src = "music-player/index.html";
         }
     });
 }
