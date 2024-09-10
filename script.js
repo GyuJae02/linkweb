@@ -266,6 +266,28 @@ function DispositivoNonSupportato() {
 
     let widthSpiegazione = document.getElementById("width-spiegazione");
     let heightSpiegazione = document.getElementById("height-spiegazione");
+
+    checkSopporto();
+
+    window.addEventListener("resize", function() {
+        checkSopporto();
+    });
+
+    function checkSopporto() {
+        // se la larghezza è inferiore a 800px, allora si mostra la spiegazione
+        if (window.innerWidth < 800) {
+            AttualeWidthContainer.innerHTML = window.innerWidth + "px";
+        } else {
+            AttualeWidthContainer.innerHTML = "";
+        }
+
+        // se l'altezza è inferiore a 600px, allora si mostra la spiegazione
+        if (window.innerHeight < 600) {
+            AttualeHeightContainer.innerHTML = window.innerHeight + "px";
+        } else {
+            AttualeHeightContainer.innerHTML = "";
+        }
+    }
 }
 
 DispositivoNonSupportato();
