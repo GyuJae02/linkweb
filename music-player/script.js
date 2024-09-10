@@ -168,8 +168,3 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 audio.addEventListener('timeupdate',DurTime);
-
-
-window.onbeforeunload = function(event) {
-    console.log("asddasdsadsa");
-};
