@@ -92,8 +92,10 @@ for (let i = 0; i < appIcon.length; i++) {
             } else {
                 findIframeResult.src = "https://www.samsunglions.com/index.asp";
             }
-        } else if (appName == "Lions PlayList") {
+        } else if (appName == "PlayList") {
             findIframeResult.src = "music-player/index.html";
+        } else if (appName == "Game") {
+            findIframeResult.src = "https://iogames.space/hexanautio";
         }
     });
 }
