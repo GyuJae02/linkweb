@@ -87,7 +87,12 @@ for (let i = 0; i < appIcon.length; i++) {
         if (appName == "Contact") {
             findIframeResult.src = "linkweb/index.html";
         } else if (appName == "Lions"){
-            findIframeResult.src = "https://www.samsunglions.com/m/";
+            if (isMobile()) {
+                findIframeResult.src = "https://www.samsunglions.com/m/";
+            }
+            else {
+                findIframeResult.src = "https://www.samsunglions.com/index.asp";
+            }
         } else if (appName == "Lions PlayList") {
             findIframeResult.src = "music-player/index.html";
         }
@@ -266,6 +271,10 @@ function getDate() {
     setTimeout(function() {
         getDate();
     }, 60000);
+}
+
+function isMobile() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
 
 dragSelectorLogic();
