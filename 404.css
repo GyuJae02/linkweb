@@ -1,62 +1,80 @@
-@import 'https://fonts.googleapis.com/css?family=VT323';
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content ="Oritro Ahmed [ http://ioritro.com ]">
+        <title>Page Not Found :(</title>
+        <style>
+            ::-moz-selection {
+                background: #b3d4fc;
+                text-shadow: none;
+            }
 
-$light-grey: #e0e2f4;
-$grey: #aaaaaa;
-$blue: #0414a7;
+            ::selection {
+                background: #b3d4fc;
+                text-shadow: none;
+            }
 
-$base-font-size: 20px;
-$font-stack: 'VT323', monospace;
+            html {
+                padding: 30px 10px;
+                font-size: 20px;
+                line-height: 1.4;
+                color: #737373;
+                background: #0001AB;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+            }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-a { color: $light-grey; }
+            
+            body {
+                max-width: 800px;
+                _width: 800px;
+                padding: 30px 20px 50px;
+                border-radius: 4px;
+                margin: 0 auto;                
+                background: #0001AB;
+                font-family: Lucida, monospace;
+            }
 
-body,
-p { font: normal #{$base-font-size}/1.25rem $font-stack; }
-h1 { font: normal 2.75rem/1.05em $font-stack; }
-h2 { font: normal 2.25rem/1.25em $font-stack; }
-h3 { font: lighter 1.5rem/1.25em $font-stack; }
-h4 { font: lighter 1.125rem/1.2222222em $font-stack; }
+            h1 {
+                margin: 0 10px;
+                font-size: 50px;
+                text-align: center;
+                background-color: #FFF;
+                color: #0001AB;
+            }
 
-body { background: $blue; }
+            h1 span {
+                color: #bbb;
+            }
 
-.container {
-  width: 90%;
-  margin: auto;
-  max-width: 640px;
-}
+            h3 {
+                margin: 1.5em 0 0.5em;
+            }
 
-.bsod {
-  padding-top: 10%;
-  
-  .neg {
-    text-align: center;
-    color: $blue;
-    
-    .bg {
-      background: $grey;
-      padding: 0 15px 2px 13px;
-    }
-  }
-  .title { margin-bottom: 50px; }
-  .nav {
-    margin-top: 35px;
-    text-align: center;
-    
-    .link {
-      text-decoration: none;
-      padding: 0 9px 2px 8px;
-      
-      &:hover,
-      &:focus {
-        background: $grey;
-        color: $blue;
-      }
-    }
-  }
-}
+            p {
+                margin: 1em 0;
+                color: #FFF;
+            }
 
+            .container {
+                max-width: 600px;
+                _width: 600px;
+                margin: 0 auto;
+            }
+
+            p a {
+                color: orange;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Not found</h1>
+            <p> Sorry, but the page you were trying to view does not exist.</p>
+            <p><a href="https://jaegyu.com">Go Back</a> </p>
+        </div>
+    </body>
+</html>
