@@ -86,11 +86,10 @@ for (let i = 0; i < appIcon.length; i++) {
         var findIframeResult = document.getElementById("iframe");
         if (appName == "Contact") {
             findIframeResult.src = "linkweb/index.html";
-        } else if (appName == "Lions"){
+        } else if (appName == "Lions") {
             if (isMobile()) {
                 findIframeResult.src = "https://www.samsunglions.com/m/";
-            }
-            else {
+            } else {
                 findIframeResult.src = "https://www.samsunglions.com/index.asp";
             }
         } else if (appName == "Lions PlayList") {
